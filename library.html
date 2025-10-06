@@ -1,0 +1,180 @@
+
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>المكتبة | مكتبتي الشخصية</title>
+  <style>
+    body {
+      font-family: 'Cairo', sans-serif;
+      margin: 0;
+      background: #f5f5f5;
+      color: #333;
+    }
+
+    header {
+      background-color: #4a148c;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    nav {
+      background-color: #6a1b9a;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1000px;
+      margin: 40px auto;
+    }
+
+    h2 {
+      color: #4a148c;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .section {
+      margin-bottom: 50px;
+    }
+
+    .books {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .card h3 {
+      color: #6a1b9a;
+      margin-top: 10px;
+    }
+
+    .card a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 15px;
+      background-color: #6a1b9a;
+      color: white;
+      text-decoration: none;
+      border-radius: 10px;
+      font-size: 0.9em;
+    }
+
+    .card a:hover {
+      background-color: #4a148c;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #4a148c;
+      color: white;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>📚 مكتبتي</h1>
+    <p>استكشف مجموعتي من الروايات، المراجع، والدفاتر</p>
+  </header>
+
+  <nav>
+    <a href="index.html">الرئيسية</a>
+    <a href="works.html">أعمالي</a>
+    <a href="library.html">المكتبة</a>
+    <a href="contact.html">تواصل معي</a>
+  </nav>
+
+  <div class="container">
+
+    <div class="section">
+      <h2>📖 الروايات</h2>
+      <div class="books">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1473187983305-f615310e7daa" alt="رواية">
+          <h3>رواية ضوء في العتمة</h3>
+          <a href="#">اقرأ الآن</a>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794" alt="رواية">
+          <h3>حكايات على ضفاف النيل</h3>
+          <a href="#">اقرأ الآن</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>📝 دفاتر وملاحظات</h2>
+      <div class="books">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba" alt="دفتر">
+          <h3>دفتر الخواطر</h3>
+          <a href="#">تحميل PDF</a>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a" alt="ملاحظات">
+          <h3>ملاحظات الكاتب</h3>
+          <a href="#">اقرأ الآن</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>📚 مراجع وأبحاث</h2>
+      <div class="books">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f" alt="مرجع">
+          <h3>مرجع في الأدب العربي</h3>
+          <a href="#">تحميل</a>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66" alt="بحث">
+          <h3>بحث عن أثر القراءة</h3>
+          <a href="#">تحميل</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>© 2025 جميع الحقوق محفوظة - مكتبتي الشخصية</p>
+  </footer>
+</body>
+</html>
